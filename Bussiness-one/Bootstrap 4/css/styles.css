@@ -1,0 +1,286 @@
+﻿/*====================== Font Families =======================*/
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../../Fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Industry-Bold';
+    src: url('../../Fonts/Industry-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Industry-Light';
+    src: url('../../Fonts/Industry-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Prometo Light';
+    src: url('../../Fonts/Prometo Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Prometo Regular';
+    src: url('../../Fonts/Prometo Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('../../Fonts/Lato-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'tahoma';
+    src: url('../../Fonts/tahoma.ttf') format('truetype');
+}
+/*=================== Header Section Styling ===================*/
+html, body {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+.bg-color {
+    background-color: #f4f4f4;
+}
+
+.logo-font {
+    font-family: 'Industry-Bold';
+    font-size: 36px
+}
+
+.logo-font-2 {
+    font-family: 'Industry-Light';
+    font-size: 36px
+}
+
+.nav-setting {
+    padding: 0 20px;
+    padding-top: 0px;
+}
+
+.pera-text {
+    font-family: 'Lato-Light';
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#home {
+    background-image: url('../../Images/banner-img.png');
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-color {
+    background-color: #40d8f1;
+}
+
+.navbar-brand {
+    margin-right: 0;
+}
+
+    .navbar-brand .logoimage1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar-brand .logo1.scrolled {
+        margin-top: 0;
+        max-width: 81%;
+        color: #ffffff;
+        transition: width 400ms linear;
+    }
+
+.nav-item {
+    position: relative;
+    padding: 8px;
+}
+
+.fixed-top.scrolled {
+    background-color: #060606;
+}
+
+.navbar-nav.scrolled {
+    margin-top: 0;
+    overflow: hidden;
+}
+
+#home .navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Montserrat-Regular';
+    font-size: 19px;
+    font-weight: 500;
+}
+
+    #home .navbar-light .navbar-nav .nav-link.scrolled {
+        background-color: transparent;
+        text-decoration: none;
+        font-family: 'Montserrat-Regular';
+        color: #ffffff;
+        font-size: 10px;
+        font-weight: 400;
+        font-size: 14px;
+        transition: font-size 400ms linear;
+    }
+
+.end {
+    text-align: end;
+}
+
+.mainheading {
+    font-size: 72px;
+    font-weight: 900;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 225px;
+    line-height: 1;
+    text-align: end;
+    color: #232626;
+}
+
+#home .banner-btn {
+    margin-top: 48px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    color: #232626;
+    font-size: 18px;
+    background: transparent;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 265px;
+    height: 60px;
+    padding: 15px;
+    border: 2px solid #232626;
+}
+
+#home .button_design_1:hover {
+    background-color: #ffffff;
+    color: #232626;
+}
+
+.below-line {
+    line-height: 2em;
+    color: #232626;
+    font-size: 48px;
+    position: relative;
+}
+
+    .below-line:after {
+        content: ' ';
+        position: absolute;
+        display: block;
+        width: 110px;
+        border: 2px solid #232626;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        right: 0;
+    }
+
+
+/*=================== Services Section Styling ===================*/
+.mt-200 {
+    margin-top: 200px;
+}
+
+.mt-48 {
+    margin-top: 48px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-180 {
+    margin-top: 180px;
+}
+
+.mt-88 {
+    margin-top: 88px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mt-150 {
+    margin-top: 150px;
+}
+
+.mt-65 {
+    margin-top: 65px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+/*=================== About Section Styling =================*/
+.about-font {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#about-us {
+    background-image: url('../../Images/bg-img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pera-color {
+    color: #808080;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.read-btn {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: white;
+    background-color: #00bff3;
+    width: 160px;
+    height: 50px;
+}
+/*==================================*/
+.how-we {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    color: #212121;
+    font-weight: 700;
+}
+
+.dot-top {
+    border-top: 6px dashed #ebebeb;
+    height: 10px;
+}
+
+.hexa {
+    border-radius: 21px;
+    height: 155px;
+    width: 140px;
+    background-color: #00bff3;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    -webkit-box-shadow: 10px 10px 34px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 34px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 34px -10px rgba(0,0,0,0.75);
+}
