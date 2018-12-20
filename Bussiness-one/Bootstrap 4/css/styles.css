@@ -59,11 +59,13 @@ html, body {
     padding-top: 0px;
 }
 
-.pera-text {
+.slider-pera-text {
     font-family: 'Lato-Light';
     font-size: 18px;
     font-weight: bold;
+    color: #212121;
 }
+
 
 #home {
     background-image: url('../../Images/banner-img.png');
@@ -100,7 +102,7 @@ html, body {
 }
 
 .fixed-top.scrolled {
-    background-color: #060606;
+    background-color: #40d8f1;
 }
 
 .navbar-nav.scrolled {
@@ -170,6 +172,7 @@ html, body {
     color: #232626;
     font-size: 48px;
     position: relative;
+    text-align: right;
 }
 
     .below-line:after {
@@ -193,16 +196,20 @@ html, body {
     margin-top: 200px;
 }
 
-.mt-48 {
-    margin-top: 48px;
-}
-
-.mt-30 {
-    margin-top: 30px;
-}
-
 .mt-180 {
     margin-top: 180px;
+}
+
+.mt-150 {
+    margin-top: 150px;
+}
+
+.mt-140 {
+    margin-top: 140px;
+}
+
+.mt-95 {
+    margin-top: 95px;
 }
 
 .mt-88 {
@@ -213,8 +220,8 @@ html, body {
     margin-top: 80px;
 }
 
-.mt-150 {
-    margin-top: 150px;
+.mt-70 {
+    margin-top: 70px;
 }
 
 .mt-65 {
@@ -229,8 +236,28 @@ html, body {
     margin-top: 50px;
 }
 
+.mt-48 {
+    margin-top: 48px;
+}
+
+.mt-45 {
+    margin-top: 45px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+/*=========== Margin Bottom ===========*/
 .mb-100 {
     margin-bottom: 100px;
+}
+
+.mb-110 {
+    margin-bottom: 110px;
+}
+
+.mb-160 {
+    margin-bottom: 160px;
 }
 /*=================== About Section Styling =================*/
 .about-font {
@@ -252,6 +279,12 @@ html, body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.p-color {
+    color: #d8d8d9;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
 .read-btn {
     font-family: 'Lato', sans-serif;
     font-weight: 900;
@@ -269,18 +302,114 @@ html, body {
 }
 
 .dot-top {
-    border-top: 6px dashed #ebebeb;
-    height: 10px;
+    border-top: 2px dashed #ebebeb;
+    height: 60px;
+    border-left: 2px dashed #ebebeb;
+    border-right: 2px dashed #ebebeb;
 }
 
-.hexa {
-    border-radius: 21px;
-    height: 155px;
+.hexagon {
+    position: relative;
     width: 140px;
+    height: 80.83px;
     background-color: #00bff3;
-    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    -webkit-box-shadow: 10px 10px 34px -10px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 34px -10px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 34px -10px rgba(0,0,0,0.75);
+    margin: 40.41px 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+    .hexagon:before,
+    .hexagon:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        width: 98.99px;
+        height: 98.99px;
+        -webkit-transform: scaleY(0.5774) rotate(-45deg);
+        -ms-transform: scaleY(0.5774) rotate(-45deg);
+        transform: scaleY(0.5774) rotate(-45deg);
+        background-color: inherit;
+        left: 20.5025px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        text-align: center;
+    }
+
+    .hexagon:before {
+        top: -49.4975px;
+    }
+
+    .hexagon:after {
+        bottom: -49.4975px;
+    }
+
+    /*cover up extra shadows*/
+    .hexagon span {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 140px;
+        height: 80.8290px;
+        z-index: 2;
+        background: inherit;
+    }
+
+.font-size-family {
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pera-text {
+    font-family: 'Lato-Light';
+    font-size: 18px;
+    font-weight: bold;
+    color: #9c9c9c;
+    padding: 0 1.5rem 0 1.5rem;
+}
+/*============================*/
+#place {
+    background-image: url('../../Images/place-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.font-family {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.bg-color-setting {
+    background-color: white;
+    width: 100%;
+    height: 85px;
+    border-radius: 4px;
+}
+
+.padding-r-l {
+    padding: 0 100px 0 100px;
+}
+
+.btn-color {
+    width: 275px;
+    height: 76px;
+    background-color: #00bff3;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+/*======= Gallery styling ======*/
+#gallery {
+    background-color: #f3f3f3;
+}
+
+.gallery-font {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
