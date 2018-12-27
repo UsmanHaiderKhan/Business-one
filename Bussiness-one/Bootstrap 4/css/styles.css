@@ -208,8 +208,16 @@ html, body {
     margin-top: 140px;
 }
 
+.mt-100 {
+    margin-top: 100px;
+}
+
 .mt-95 {
     margin-top: 95px;
+}
+
+.mt-90 {
+    margin-top: 90px;
 }
 
 .mt-88 {
@@ -236,6 +244,10 @@ html, body {
     margin-top: 50px;
 }
 
+.mt-47 {
+    margin-top: 47px;
+}
+
 .mt-48 {
     margin-top: 48px;
 }
@@ -247,18 +259,34 @@ html, body {
 .mt-30 {
     margin-top: 30px;
 }
+
+
+.mr-190 {
+    margin-right: 190px;
+}
+
 /*=========== Margin Bottom ===========*/
-.mb-100 {
-    margin-bottom: 100px;
+.mb-160 {
+    margin-bottom: 160px;
 }
 
 .mb-110 {
     margin-bottom: 110px;
 }
 
-.mb-160 {
-    margin-bottom: 160px;
+.mb-100 {
+    margin-bottom: 100px;
 }
+
+.mb-70 {
+    padding-bottom: 70px;
+}
+
+.pb-47 {
+    padding-bottom: 47px;
+}
+
+
 /*=================== About Section Styling =================*/
 .about-font {
     font-family: 'Poppins', sans-serif;
@@ -305,10 +333,19 @@ html, body {
     border-top: 2px dashed #ebebeb;
     height: 60px;
     border-left: 2px dashed #ebebeb;
+    margin-left: 3.5%;
     border-right: 2px dashed #ebebeb;
 }
 
 .hexagon {
+    background-image: url('../../Images/poly.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 24vh;
+}
+/*.hexagon {
     position: relative;
     width: 140px;
     height: 80.83px;
@@ -316,9 +353,9 @@ html, body {
     margin: 40.41px 0;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
     text-align: center;
-}
+}*/
 
-    .hexagon:before,
+/*.hexagon:before,
     .hexagon:after {
         content: "";
         position: absolute;
@@ -343,7 +380,7 @@ html, body {
     }
 
     /*cover up extra shadows*/
-    .hexagon span {
+/*.hexagon span {
         display: block;
         position: absolute;
         top: 0px;
@@ -352,7 +389,8 @@ html, body {
         height: 80.8290px;
         z-index: 2;
         background: inherit;
-    }
+    }*/
+
 
 .font-size-family {
     font-size: 22px;
@@ -373,10 +411,31 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
     height: 100vh;
     width: 100%;
 }
+
+.input-email {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border: none;
+    outline: none;
+    width: 220px;
+    height: 70px;
+    transition: height 1s;
+    -webkit-transition: height 1s;
+}
+
+    .input-email:focus {
+        height: 50px;
+        font-size: 16px;
+        border-color: #00bff3;
+    }
+
+::-moz-placeholder {
+    color: black;
+}
+
 
 .font-family {
     font-size: 30px;
@@ -412,4 +471,181 @@ html, body {
     font-size: 36px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+}
+
+#row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+    }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.btn-load-more {
+    width: 265px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid #232323;
+    color: #232323;
+    text-align: center;
+}
+
+/*=================== News And Blog Styling ===================*/
+.news-font {
+    font-family: 'Industry-Bold';
+    font-size: 20px;
+    color: #00bff3;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.des-font {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.news-color {
+    color: #999999;
+}
+
+/*=============== Clients Styling ===============*/
+
+
+
+.demo {
+    background: transparent;
+}
+
+#card {
+    margin: 0 auto;
+}
+
+    #card .carousel-item {
+        height: 290px;
+    }
+
+    #card .carousel-caption {
+        padding: 0;
+        right: 0;
+        left: 0;
+        color: #3d3d3d;
+    }
+
+/*#card .carousel-caption .col-md-3 {
+            display: flex;
+            align-items: center;
+        }
+
+        #card .carousel-caption .col-md-9 {
+            text-align: left;
+        }*/
+
+.navi a {
+    text-decoration: none;
+}
+
+.carousel-control-next-icon {
+    background-image: url('../../Images/right-arrow.png');
+    position: absolute;
+    top: 45%;
+    width: 20px;
+    height: 20px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../../Images/left-arrow.png');
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 20px;
+    height: 20px;
+}
+
+.peragraph {
+    color: #afafaf;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+}
+
+.client-name {
+    color: #16b5ef;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-top: 5%;
+    text-transform: uppercase;
+}
+
+#contact-us {
+    background-image: url('../../Images/contact-us.png');
+    ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 160px;
+    height: 100vh;
+    width: 100%;
+}
+
+.contact-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    border: 1px solid rgba(0,0,0,.2);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+
+/*=================== Media Queries  Section ==================*/
+@media screen and (max-width: 360px) {
+    .media-icon-mt-3 {
+        margin-top: 3.8rem !important;
+    }
 }
