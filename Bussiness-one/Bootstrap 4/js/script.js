@@ -41,8 +41,11 @@ $(function () {
 
 
 /*================== Read More Text ==================*/
+//"<div class='mt-30 animated slideInLeft' style='text-align:right; margin-bottom: 150px;>" +
+//    "<a href = '#' class='scroll btn banner-btn'>KNOW MORE</a>" +
+//    "</div>";
 $(function () {
-    var showChar = 160;
+    var showChar = 250;
 
     var moretext = "...";
     var lesstext = "See Less";
@@ -71,7 +74,6 @@ $(function () {
         return false;
     });
 });
-
 
 /*===================== Load More Images ======================*/
 $(document).ready(function () {
