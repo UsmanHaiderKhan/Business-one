@@ -46,22 +46,22 @@ $(function () {
 //    "</div>";
 $(function () {
     var showChar = 250;
-
-    var moretext = "...";
-    var lesstext = "See Less";
+    var moretext = "KNOW MORE";
+    var lesstext = " KNOW LESS";
     $('.comments-space').each(function () {
         var content = $(this).html();
         if (content.length > showChar) {
             var show_content = content.substr(0, showChar);
             var hide_content = content.substr(showChar, content.length - showChar);
             var html = show_content + '<span class="remaining-content"><span>' + hide_content +
-                '</span>&nbsp;&nbsp;<a href="" class="morelink color"><strong>' + moretext +
-                '</strong></a></span>';
+                '</span><a href="" class="morelink btn banner-btn mt-30" style="display:block;float:right;margin-top:50px">' + moretext + '</a>'
+                + '</span>';
             $(this).html(html);
         }
     });
 
     $(".morelink").click(function () {
+
         if ($(this).hasClass("less")) {
             $(this).removeClass("less");
             $(this).html(moretext);
@@ -74,6 +74,24 @@ $(function () {
         return false;
     });
 });
+//Custom
+
+var i = 0;
+
+function read() {
+    if (!i) {
+        document.getElementById('more').style.display = "inline";
+        document.getElementById('dots').style.display = "none";
+        document.getElementById('read').innerHTML = "Read Less";
+        i = 1;
+    } else {
+        document.getElementById('more').style.display = "none";
+        document.getElementById('dots').style.display = "inline";
+        document.getElementById('read').innerHTML = "Read More";
+        i = 0;
+    }
+}
+
 
 /*===================== Load More Images ======================*/
 $(document).ready(function () {
