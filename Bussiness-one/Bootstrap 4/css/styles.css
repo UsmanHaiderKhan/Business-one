@@ -143,7 +143,7 @@ html, body {
     color: #232626;
 }
 
-#home .banner-btn {
+.banner-btn {
     margin-top: 48px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
@@ -160,7 +160,14 @@ html, body {
     height: 60px;
     padding: 15px;
     border: 2px solid #232626;
+    margin-top: 30px;
 }
+
+/*.color {
+    background-color: #40d8f1;
+    border: 1px solid black;
+    color: white;
+}*/
 
 #home .button_design_1:hover {
     background-color: #ffffff;
@@ -332,11 +339,17 @@ html, body {
 
 .read-btn {
     font-family: 'Lato', sans-serif;
-    font-weight: 900;
+    font-weight: 500;
+    font-size: 20px;
     color: white;
     background-color: #00bff3;
     width: 160px;
     height: 50px;
+    margin-top: 10px;
+}
+
+#more {
+    display: none;
 }
 /*==================================*/
 .how-we {
