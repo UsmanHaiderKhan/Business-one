@@ -40,6 +40,10 @@ html, body {
     scroll-behavior: smooth;
 }
 
+.active {
+    color: #ffffff;
+}
+
 .bg-color {
     background-color: #f4f4f4;
 }
@@ -71,7 +75,6 @@ html, body {
     background-image: url('../../Images/banner-img.png');
     position: relative;
     background-size: cover;
-    height: 120vh;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -666,10 +669,8 @@ html, body {
     color: #b9c0c6;
 }
 /*=================== Media Queries  Section ==================*/
-/*@media screen and (max-width: 1366px) {
-    #home {
-        height: 80vh;
-    }
+@media screen and (max-width: 1366px) {
+
 
     .carousel-control-prev-icon {
         top: 67%;
@@ -681,14 +682,6 @@ html, body {
 
     .hexagon {
         height: 150px;
-    }
-
-    #contact-us {
-        height: 80vh;
-    }
-
-    .contact-form {
-        padding: 100px;
     }
 
     .btn-color {
@@ -706,7 +699,7 @@ html, body {
     .how-we {
         font-size: 25px;
     }
-}*/
+}
 
 @media screen and (max-width: 1024px) {
     #home {
