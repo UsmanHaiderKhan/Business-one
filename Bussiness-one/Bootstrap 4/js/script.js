@@ -54,7 +54,7 @@ $(function () {
             var show_content = content.substr(0, showChar);
             var hide_content = content.substr(showChar, content.length - showChar);
             var html = show_content + '<span class="remaining-content"><span>' + hide_content +
-                '</span><a href="" class="morelink btn banner-btn mt-30" style="display:block;float:right;margin-top:50px">' + moretext + '</a>'
+                '</span><a href="" class="morelink btn banner-btn mt-30" style="display:block;float:right;margin-top:50px;margin-bottom:200px;">' + moretext + '</a>'
                 + '</span>';
             $(this).html(html);
         }
