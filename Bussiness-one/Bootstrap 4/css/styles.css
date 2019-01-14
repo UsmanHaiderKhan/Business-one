@@ -5,6 +5,16 @@
 }
 
 @font-face {
+    font-family: 'Roboto-Black';
+    src: url('../../Fonts/Roboto-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../../Fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'Industry-Bold';
     src: url('../../Fonts/Industry-Bold.otf') format('opentype');
 }
@@ -66,7 +76,7 @@ html, body {
 .slider-pera-text {
     font-family: 'Lato-Light';
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
     color: #212121;
 }
 
@@ -143,27 +153,36 @@ html, body {
     padding-top: 225px;
     line-height: 1;
     text-align: end;
-    color: #232626;
+    color: #212121;
 }
 
 .banner-btn {
     margin-top: 48px;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     border: none;
-    border-radius: 3px;
-    color: #232626;
+    border-radius: 0px;
+    color: #212121;
     font-size: 18px;
     background: transparent;
     text-decoration: none;
-    font-weight: 500;
     transition: 0.3s;
     cursor: pointer;
     width: 265px;
     height: 60px;
     padding: 15px;
-    border: 2px solid #232626;
+    border: 2px solid #212121;
     margin-top: 30px;
+}
+
+    .banner-btn:hover {
+        text-decoration: none;
+        color: #212121;
+    }
+
+.btn:focus, .btn.focus {
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 /*.color {
@@ -270,6 +289,13 @@ html, body {
     margin-top: 30px;
 }
 
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-19 {
+    margin-top: 19px;
+}
 
 .mr-190 {
     margin-right: 190px;
@@ -288,8 +314,12 @@ html, body {
     margin-bottom: 100px;
 }
 
+.margin-bottom-130 {
+    margin-bottom: 130px;
+}
+
 .mb-70 {
-    padding-bottom: 70px;
+    padding-bottom: 130px;
 }
 
 .pb-47 {
@@ -380,15 +410,16 @@ html, body {
 }
 
 .font-size-family {
-    font-size: 22px;
+    font-family: 'Roboto-Black';
+    font-size: 21px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .pera-text {
-    font-family: 'Lato-Light';
+    font-family: 'Roboto-Light';
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
     color: #9c9c9c;
     padding: 0 1.5rem 0 1.5rem;
 }
@@ -459,8 +490,9 @@ html, body {
 }
 
 .gallery-font {
-    font-size: 36px;
-    font-weight: bold;
+    font-size: 36px !important;
+    font-weight: 700;
+    color: #2c2e37;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -504,6 +536,10 @@ html, body {
     background: transparent;
     border: 2px solid #232323;
     color: #232323;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: uppercase;
     text-align: center;
 }
 
@@ -516,6 +552,12 @@ html, body {
     text-transform: uppercase;
     letter-spacing: 5px;
     text-align: center;
+}
+
+.news-shadow {
+    -webkit-box-shadow: 4px 6px 8px -2px rgba(0,0,0,0.32);
+    -moz-box-shadow: 4px 6px 8px -2px rgba(0,0,0,0.32);
+    box-shadow: 4px 6px 8px -2px rgba(0,0,0,0.32);
 }
 
 .des-font {
@@ -598,19 +640,12 @@ html, body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    padding-top: 160px;
-    height: 100vh;
-    width: 100%;
+    padding: 160px 0px;
 }
 
 .contact-form {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: auto;
     background-size: cover;
-    padding: 45px;
+    padding: 30px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -624,11 +659,32 @@ html, body {
     overflow: hidden;
 }
 
+.form-control:focus {
+    border-color: white !important;
+    box-shadow: none !important;
+    color: white !important;
+    outline: none !important;
+}
+
+.form-control {
+    font-family: 'Roboto-Light';
+    font-size: 18px;
+    height: 60px !important;
+}
+
+::placeholder {
+    color: #cfcfcf;
+    font-family: 'Roboto-Light';
+    font-size: 18px;
+}
+
 .btn-send {
     height: 70px;
     color: white;
     letter-spacing: 5px;
     background-color: #00bff3;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 .contact-text {
@@ -702,9 +758,7 @@ html, body {
 }
 
 @media screen and (max-width: 1024px) {
-    #home {
-        height: 60vh;
-    }
+
 
     .carousel-control-prev-icon {
         top: 67%;
@@ -716,10 +770,6 @@ html, body {
 
     .hexagon {
         height: 150px;
-    }
-
-    #contact-us {
-        height: 50vh;
     }
 
     .contact-form {
@@ -744,9 +794,7 @@ html, body {
 }
 
 @media screen and (max-width: 800px) {
-    #home {
-        height: 100vh;
-    }
+
 
     .media-mt-15 {
         margin-top: 15%;
@@ -792,9 +840,7 @@ html, body {
         height: 300px;
     }
 
-    #contact-us {
-        height: 70vh;
-    }
+
 
     .contact-form {
         padding: 20px;
@@ -802,8 +848,10 @@ html, body {
 }
 
 @media screen and (max-width: 768px) {
-    #home {
-        height: 100vh;
+
+
+    .md-pl-0 {
+        padding-left: 0px;
     }
 
     #about-us {
@@ -861,9 +909,6 @@ html, body {
         height: 300px;
     }
 
-    #contact-us {
-        height: 70vh;
-    }
 
     .contact-form {
         padding: 20px;
@@ -927,10 +972,6 @@ html, body {
         height: 700px;
     }
 
-    #contact-us {
-        height: 100vh;
-    }
-
     .contact-form {
         margin-top: 70px;
     }
@@ -964,6 +1005,14 @@ html, body {
 
     .how-we {
         font-size: 25px;
+    }
+
+    .carousel-control-next-icon {
+        top: 45%;
+    }
+
+    .carousel-control-prev-icon {
+        top: 45%;
     }
 }
 
@@ -1020,9 +1069,6 @@ html, body {
         height: 700px;
     }
 
-    #contact-us {
-        height: 100vh;
-    }
 
     .contact-form {
         margin-top: 30px;
@@ -1042,9 +1088,7 @@ html, body {
 }
 
 @media screen and (max-width: 360px) {
-    #home {
-        height: 120vh;
-    }
+
 
     .media-mt-15 {
         margin-top: 15%;
@@ -1098,10 +1142,6 @@ html, body {
         height: 700px;
     }
 
-    #contact-us {
-        height: 100vh;
-    }
-
     .contact-form {
         margin-top: 10px;
     }
@@ -1128,9 +1168,7 @@ html, body {
 }
 /*============================ Landscape View  ===========================*/
 @media screen and (max-width: 1024px) and (orientation: landscape) {
-    #home {
-        height: 145vh;
-    }
+
 
     .hexagon {
         height: 20vh;
@@ -1156,9 +1194,6 @@ html, body {
         width: 100%;
     }
 
-    #contact-us {
-        height: 100vh;
-    }
 
     .contact-form {
         margin-top: 70px;
@@ -1170,9 +1205,7 @@ html, body {
 }
 
 @media screen and (max-width: 823px) and (orientation: landscape) {
-    #home {
-        height: 150vh;
-    }
+
 
     .mainheading {
         padding-top: 100px;
@@ -1212,27 +1245,21 @@ html, body {
         height: 300px;
     }
 
-    #contact-us {
-        height: 200vh;
-    }
-
     .contact-form {
         margin-top: 70px;
     }
 
     .carousel-control-next-icon {
-        top: 50%;
+        top: 35%;
     }
 
     .carousel-control-prev-icon {
-        top: 50%;
+        top: 35%;
     }
 }
 
 @media screen and (max-width: 812px) and (orientation: landscape) {
-    #home {
-        height: 150vh;
-    }
+
 
     .mainheading {
         padding-top: 100px;
@@ -1273,9 +1300,7 @@ html, body {
         height: 300px;
     }
 
-    #contact-us {
-        height: 200vh;
-    }
+
 
     .contact-form {
         margin-top: 70px;
@@ -1291,9 +1316,7 @@ html, body {
 }
 
 @media screen and (max-width: 740px) and (orientation: landscape) {
-    #home {
-        height: 145vh;
-    }
+
 
     .mainheading {
         padding-top: 100px;
@@ -1343,8 +1366,12 @@ html, body {
         height: 700px;
     }
 
-    #contact-us {
-        height: 200vh;
+    .carousel-control-next-icon {
+        top: 54%;
+    }
+
+    .carousel-control-prev-icon {
+        top: 54%;
     }
 
     .contact-form {
@@ -1353,9 +1380,7 @@ html, body {
 }
 
 @media screen and (max-width: 736px) and (orientation: landscape) {
-    #home {
-        height: 145vh;
-    }
+
 
     .mainheading {
         padding-top: 100px;
@@ -1405,18 +1430,19 @@ html, body {
         height: 700px;
     }
 
-    #contact-us {
-        height: 200vh;
-    }
-
     .contact-form {
         margin-top: 70px;
     }
 }
 
 @media screen and (max-width: 667px) and (orientation: landscape) {
-    #home {
-        height: 145vh;
+
+    .carousel-control-next-icon {
+        top: 35%;
+    }
+
+    .carousel-control-prev-icon {
+        top: 35%;
     }
 
     .mainheading {
@@ -1472,9 +1498,7 @@ html, body {
         height: 550px;
     }
 
-    #contact-us {
-        height: 200vh;
-    }
+
 
     .contact-form {
         margin-top: 100px;
@@ -1482,9 +1506,7 @@ html, body {
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape) {
-    #home {
-        height: 145vh;
-    }
+
 
     .mainheading {
         padding-top: 100px;
@@ -1537,10 +1559,6 @@ html, body {
 
     #card .carousel-item {
         height: 550px;
-    }
-
-    #contact-us {
-        height: 200vh;
     }
 
     .contact-form {
