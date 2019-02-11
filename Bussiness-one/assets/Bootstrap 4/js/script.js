@@ -97,8 +97,8 @@ function read() {
 $(document).ready(function () {
 
     $('.loadMore').loadMoreResults({
-        displayedItems: 3,
-        showItems: 3
+        displayedItems: 1,
+        showItems: 1
 
     });
 
@@ -107,16 +107,16 @@ $(function () {
     $('a').smoothScroll();
 });
 /*======================= Owl Carousel =======================*/
-$(document).ready(function () {
-    $("#testimonial-slider").owlCarousel({
-        items: 1,
-        itemsDesktop: [1000, 1],
-        itemsDesktopSmall: [979, 1],
-        itemsTablet: [768, 1],
-        pagination: false,
-        navigation: true,
-        navigationText: ["", ""],
-        slideSpeed: 1000,
-        autoPlay: true
-    });
-});
+//$(document).ready(function () {
+//    $("#testimonial-slider").owlCarousel({
+//        items: 1,
+//        itemsDesktop: [1000, 1],
+//        itemsDesktopSmall: [979, 1],
+//        itemsTablet: [768, 1],
+//        pagination: false,
+//        navigation: true,
+//        navigationText: ["", ""],
+//        slideSpeed: 1000,
+//        autoPlay: true
+//    });
+//});
