@@ -540,6 +540,8 @@ html, body {
 
 /*=============== Clients Styling ===============*/
 
+
+
 .my-mt {
     margin-top: 3rem;
 }
@@ -704,8 +706,53 @@ html, body {
     margin-bottom: 0px;
     margin-top: 0px;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .testimonials {
+        max-height: 700px;
+    }
+
+    .icon-overlay {
+        height: 300px;
+        top: calc(50% - 150px);
+    }
+
+    .carousel-controls .control {
+        width: 25px;
+        height: 25px;
+        top: inherit;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .control i {
+        font-size: .7rem;
+    }
+
+    .testimonials .message {
+        font-size: 1rem;
+    }
+
+    .testimonials h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
 /*=================== Media Queries  Section ==================*/
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
     .mt-5 {
         margin-top: 5rem !important;
     }
@@ -717,6 +764,9 @@ html, body {
 
 @media screen and (max-width: 1366px) {
 
+    .mt-5 {
+        margin-top: 3rem !important;
+    }
 
     .carousel-control-prev-icon {
         top: 43%;
@@ -753,6 +803,9 @@ html, body {
 }
 
 @media screen and (max-width: 1024px) {
+    .mt-5 {
+        margin-top: 3rem !important;
+    }
 
     .dot-top {
         width: 618px;
@@ -794,6 +847,9 @@ html, body {
 }
 
 @media screen and (max-width: 800px) {
+    .mt-5 {
+        margin-top: 3rem !important;
+    }
 
 
     .media-mt-15 {
@@ -848,6 +904,10 @@ html, body {
 }
 
 @media screen and (max-width: 768px) {
+    .mt-5 {
+        margin-top: 3rem !important;
+    }
+
     .row {
         margin-left: 0;
         margin-right: 0;
@@ -949,6 +1009,9 @@ html, body {
 }
 
 @media screen and (max-width: 414px) {
+    .mt-5 {
+        margin-top: 3.5rem !important;
+    }
 
     .slider-pera-text {
         font-size: 17px;
@@ -1034,6 +1097,10 @@ html, body {
 }
 
 @media screen and (max-width: 411px) {
+    .mt-5 {
+        margin-top: 3.5rem !important;
+    }
+
     .row {
         margin-left: 0px;
         margin-right: 0px;
@@ -1063,6 +1130,10 @@ html, body {
 }
 
 @media screen and (max-width: 375px) {
+    .mt-5 {
+        margin-top: 3.5rem !important;
+    }
+
     .media-mt-15 {
         margin-top: 15%;
     }
@@ -1134,6 +1205,9 @@ html, body {
 }
 
 @media screen and (max-width: 360px) {
+    .mt-5 {
+        margin-top: 3.5rem !important;
+    }
 
 
     .media-mt-15 {
@@ -1218,6 +1292,10 @@ html, body {
 }
 /*============================ Landscape View  ===========================*/
 @media screen and (max-width: 1024px) and (orientation: landscape) {
+    .mt-5 {
+        margin-top: 3.5rem !important;
+    }
+
     .dot-top {
         width: 618px;
     }

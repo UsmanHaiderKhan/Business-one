@@ -29,9 +29,9 @@ li {
     display: inline-block;
 }
 
-.loadMore .item {
+/*.loadMore .item {
     display: none;
-}
+}*/
 
 .btn-load-more {
     font-size: 14px;
