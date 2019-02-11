@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="assets/Bootstrap 4/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/fontawesome-free-5.6.1-web/css/all.min.css" rel="stylesheet" />
+    <link href="assets/Bootstrap 4/css/slick.css" rel="stylesheet" />
+    <link href="assets/Bootstrap 4/css/slick-theme.css" rel="stylesheet" />
+    <link href="assets/Bootstrap 4/css/styles.css" rel="stylesheet" />
+    <title>testimonial</title>
+    <style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .testimonials {
+            overflow: hidden;
+            position: relative;
+            max-height: 300px;
+        }
+
+        .testimonials {
+            background: #ffffff;
+        }
+
+        .one-slide,
+        .testimonial,
+        .message {
+            border: none !important;
+            outline: none !important;
+        }
+
+        .icon-overlay {
+            position: absolute;
+            opacity: 0.3;
+            right: 10%;
+            top: 0;
+            height: auto;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .carousel-controls .control {
+            position: absolute;
+            transform: translateY(-50%);
+            width: 45px;
+            height: 45px;
+            top: 35%;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            z-index: 1;
+        }
+
+        .prev {
+            left: -2.25rem;
+        }
+
+        .next {
+            right: -2.25rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            .testimonials {
+                max-height: 700px;
+            }
+
+            .icon-overlay {
+                height: 300px;
+                top: calc(50% - 150px);
+            }
+
+            .carousel-controls .control {
+                width: 25px;
+                height: 25px;
+                top: inherit;
+            }
+
+            .prev {
+                left: 0;
+            }
+
+            .next {
+                right: 0;
+            }
+
+            .control i {
+                font-size: .7rem;
+            }
+
+            .testimonials .message {
+                font-size: 1rem;
+            }
+
+            .testimonials h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="testimonials py-5 text-black-50 px-1 px-md-5 margin-top-xl">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="carousel-controls testimonial-carousel-controls">
+                        <div class="control d-flex align-items-center justify-content-center next mt-3"><img src="assets/images/right-arrow.png"></div>
+                        <div class="control d-flex align-items-center justify-content-center prev mt-3"><img src="assets/images/left-arrow.png"></div>
+                        <div class="testimonial-carousel">
+                            <div class="row">
+                                <div class="col-md-3 offset-md-1">
+                                    <img src="assets/Images/client/client-1.png" alt="" class="rounded-circle img-fluid my-mt" />
+                                    <h4 class="client-name text-shads">Emlia Clark</h4>
+                                </div>
+                                <div class="col-md-7 text-black-50" style="margin-top: -19%;margin-left: 33%">
+                                    <i class="fa fa-quote-left float-left"></i>
+                                    <br />
+                                    <p class="text-left ">
+                                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 offset-md-1">
+                                    <img src="assets/Images/client/client-1.png" alt="" class="rounded-circle img-fluid my-mt" />
+                                    <h4 class="client-name text-shads">Emlia Clark</h4>
+                                </div>
+                                <div class="col-md-7" style=" margin-top: -19%;margin-left: 33%">
+                                    <i class="fa fa-quote-left float-left"></i>
+                                    <br />
+                                    <p class="text-left">
+                                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/Bootstrap 4/js/jquery.slim.min.js"></script>
+    <script src="assets/Bootstrap 4/js/poper.min.js"></script>
+    <script src="assets/Bootstrap 4/js/bootstrap.min.js"></script>
+    <script src="assets/Bootstrap 4/js/slick.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".testimonial-carousel").slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                arrows: true,
+                prevArrow: $(".testimonial-carousel-controls .prev"),
+                nextArrow: $(".testimonial-carousel-controls .next")
+            });
+        });
+    </script>
+</body>
+</html>
