@@ -339,6 +339,10 @@ html, body {
     margin-top: 10px;
 }
 
+    .read-btn:hover {
+        color: #ffffff;
+    }
+
 #more {
     display: none;
 }
@@ -441,6 +445,27 @@ html, body {
     font-size: 20px;
 }
 /*======= Gallery styling ======*/
+
+.h-324 {
+    height: 324px;
+}
+
+.h-280 {
+    height: 277px;
+}
+
+
+.h-250 {
+    height: 250px;
+}
+
+.h-224 {
+    height: 224px;
+}
+
+
+
+
 #gallery {
     background-color: #f3f3f3;
 }
@@ -462,11 +487,11 @@ html, body {
 .column {
     flex: 25%;
     max-width: 25%;
-    padding: 0 4px;
+    padding: 0 9px;
 }
 
     .column img {
-        margin-top: 8px;
+        margin-top: 18px;
         vertical-align: middle;
     }
 
@@ -760,9 +785,42 @@ html, body {
     .dot-top {
         width: 867px;
     }
+
+    .h-324 {
+        height: 341px;
+    }
+
+    .h-280 {
+        height: 290px;
+    }
+
+
+    .h-250 {
+        height: 262px;
+    }
+
+    .h-224 {
+        height: 233px;
+    }
 }
 
 @media screen and (max-width: 1366px) {
+    .h-324 {
+        height: 324px;
+    }
+
+    .h-280 {
+        height: 277px;
+    }
+
+
+    .h-250 {
+        height: 250px;
+    }
+
+    .h-224 {
+        height: 224px;
+    }
 
     .mt-5 {
         margin-top: 3rem !important;
@@ -803,6 +861,26 @@ html, body {
 }
 
 @media screen and (max-width: 1024px) {
+    .h-324 {
+        height: 244px;
+    }
+
+    .h-250 {
+        height: 187px;
+    }
+
+    /*.h-232 {
+        height: 176px;
+    }*/
+
+    .h-224 {
+        height: 175px;
+    }
+
+    .h-280 {
+        height: 208px;
+    }
+
     .mt-5 {
         margin-top: 3rem !important;
     }
@@ -904,6 +982,23 @@ html, body {
 }
 
 @media screen and (max-width: 768px) {
+    .h-324 {
+        height: 324px;
+    }
+
+    .h-280 {
+        height: 280px;
+    }
+
+
+    .h-250 {
+        height: 250px;
+    }
+
+    .h-224 {
+        height: 224px;
+    }
+
     .mt-5 {
         margin-top: 3rem !important;
     }
@@ -1009,6 +1104,28 @@ html, body {
 }
 
 @media screen and (max-width: 414px) {
+    .media-padding {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .h-324 {
+        height: 376px;
+    }
+
+    .h-280 {
+        height: 280px;
+    }
+
+
+    .h-250 {
+        height: 250px;
+    }
+
+    .h-224 {
+        height: 224px;
+    }
+
     .mt-5 {
         margin-top: 3.5rem !important;
     }
@@ -1101,6 +1218,23 @@ html, body {
         margin-top: 3.5rem !important;
     }
 
+    .h-324 {
+        height: 376px;
+    }
+
+    .h-280 {
+        height: 280px;
+    }
+
+
+    .h-250 {
+        height: 268px;
+    }
+
+    .h-224 {
+        height: 250px;
+    }
+
     .row {
         margin-left: 0px;
         margin-right: 0px;
@@ -1130,6 +1264,23 @@ html, body {
 }
 
 @media screen and (max-width: 375px) {
+    .h-324 {
+        height: 324px;
+    }
+
+    .h-280 {
+        height: 280px;
+    }
+
+
+    .h-250 {
+        height: 250px;
+    }
+
+    .h-224 {
+        height: 224px;
+    }
+
     .mt-5 {
         margin-top: 3.5rem !important;
     }
@@ -1205,6 +1356,23 @@ html, body {
 }
 
 @media screen and (max-width: 360px) {
+    .h-324 {
+        height: 324px;
+    }
+
+    .h-280 {
+        height: 280px;
+    }
+
+
+    .h-250 {
+        height: 250px;
+    }
+
+    .h-224 {
+        height: 224px;
+    }
+
     .mt-5 {
         margin-top: 3.5rem !important;
     }
@@ -1292,6 +1460,27 @@ html, body {
 }
 /*============================ Landscape View  ===========================*/
 @media screen and (max-width: 1024px) and (orientation: landscape) {
+    .media-padding {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .h-324 {
+        height: 244px;
+    }
+
+    .h-250 {
+        height: 187px;
+    }
+
+    .h-232 {
+        height: 176px;
+    }
+
+    .h-280 {
+        height: 208px;
+    }
+
     .mt-5 {
         margin-top: 3.5rem !important;
     }
@@ -1336,9 +1525,20 @@ html, body {
 
 @media screen and (max-width: 823px) and (orientation: landscape) {
 
-    .mt-88 {
-        margin-top: 0px;
+    .h-324 {
+        height: 186px;
     }
+
+
+    .h-250 {
+        height: 143px;
+    }
+
+    .h-224 {
+        height: 130px;
+    }
+
+
 
     #how_are {
         padding: 0px 0 50px 0;
@@ -1397,6 +1597,19 @@ html, body {
 
 @media screen and (max-width: 812px) and (orientation: landscape) {
 
+    .h-324 {
+        height: 186px;
+    }
+
+
+    .h-250 {
+        height: 143px;
+    }
+
+    .h-224 {
+        height: 130px;
+    }
+
 
     .mainheading {
         padding-top: 100px;
@@ -1453,7 +1666,22 @@ html, body {
 }
 
 @media screen and (max-width: 740px) and (orientation: landscape) {
+    .h-324 {
+        height: 324px;
+    }
 
+    .h-280 {
+        height: 280px;
+    }
+
+
+    .h-250 {
+        height: 284px;
+    }
+
+    .h-224 {
+        height: 224px;
+    }
 
     .mainheading {
         padding-top: 100px;
@@ -1519,7 +1747,22 @@ html, body {
 }
 
 @media screen and (max-width: 736px) and (orientation: landscape) {
+    .h-324 {
+        height: 347px;
+    }
 
+    .h-280 {
+        height: 280px;
+    }
+
+
+    .h-250 {
+        height: 284px;
+    }
+
+    .h-224 {
+        height: 224px;
+    }
 
     .mainheading {
         padding-top: 100px;
@@ -1575,6 +1818,22 @@ html, body {
 }
 
 @media screen and (max-width: 667px) and (orientation: landscape) {
+    .h-324 {
+        height: 324px;
+    }
+
+    .h-280 {
+        height: 280px;
+    }
+
+
+    .h-250 {
+        height: 268px;
+    }
+
+    .h-224 {
+        height: 224px;
+    }
 
     .carousel-control-next-icon {
         top: 18%;
@@ -1647,7 +1906,22 @@ html, body {
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape) {
+    .h-324 {
+        height: 324px;
+    }
 
+    .h-280 {
+        height: 280px;
+    }
+
+
+    .h-250 {
+        height: 250px;
+    }
+
+    .h-224 {
+        height: 224px;
+    }
 
     .mainheading {
         padding-top: 100px;
