@@ -23,10 +23,8 @@
                 name: 'div',
                 'class': 'item'
             },
-            displayedItems: 5,
-            showItems: 5,
             button: {
-                'class': 'btn-load-more mt-88',
+                'class': 'btn-load-more mt-90',
                 text: 'Load More'
             }
         };

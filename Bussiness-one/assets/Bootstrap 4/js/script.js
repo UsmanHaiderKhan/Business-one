@@ -74,6 +74,36 @@ $(function () {
         return false;
     });
 });
+$(function () {
+    var showChar = 250;
+    var moretext = "READ MORE";
+    var lesstext = " READ LESS";
+    $('.comments-spaces').each(function () {
+        var content = $(this).html();
+        if (content.length > showChar) {
+            var show_content = content.substr(0, showChar);
+            var hide_content = content.substr(showChar, content.length - showChar);
+            var html = show_content + '<span class="remaining-content"><span>' + hide_content +
+                '</span><a href="" class="morelinkss btn read-btn mt-30" style="display:block;margin-top:50px;">' + moretext + '</a>'
+                + '</span>';
+            $(this).html(html);
+        }
+    });
+
+    $(".morelinkss").click(function () {
+
+        if ($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
 //Custom
 
 var i = 0;
@@ -97,8 +127,8 @@ function read() {
 $(document).ready(function () {
 
     $('.loadMore').loadMoreResults({
-        displayedItems: 1,
-        showItems: 1
+        displayedItems: 5,
+        showItems: 5
 
     });
 
